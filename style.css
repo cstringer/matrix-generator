@@ -1,36 +1,37 @@
 @font-face {
-    font-family: "Matrix Symbols";
-    src: url("./font/matrix.otf") format("opentype"),
-         url("./font/matrix.ttf") format("truetype");
+  font-family: "Matrix Symbols";
+  src: url("./font/matrix.otf") format("opentype"),
+       url("./font/matrix.ttf") format("truetype");
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: #000;
-    color: #3f3;
-    font-family: "Matrix Symbols";
-    overflow: hidden;
+  background: #000;
+  color: #3f3;
+  font-family: "Matrix Symbols";
+  overflow: hidden;
 }
 
 .column {
-    float: left;
-    font-size: 3.5vw;
-    line-height: 2vw;
-    margin: -0.125vw;
-    text-align: center;
-    text-shadow: 0 0 9px #dfd;
-    transform: scaleX(-1);
-    width: 2vw;
+  float: left;
+  font-size: 3.5vw;
+  line-height: 2vw;
+  margin: -0.125vw;
+  text-align: center;
+  text-shadow: 0 0 9px #dfd;
+  transform: scaleX(-1);
+  width: 2vw;
 }
 
 .last {
-    color: #dfd !important;
-    text-shadow: -2px -2px 12px #cfc,
-                 -2px  2px 12px #cfc,
-                  2px -2px 12px #cfc ,
-                  2px  2px 12px #cfc;
+  color: #dfd !important;
+  text-shadow: -2px -2px 12px #cfc,
+    -2px 2px 12px #cfc,
+    2px -2px 12px #cfc,
+    2px 2px 12px #cfc;
 }
