@@ -78,11 +78,9 @@ function getRandomChar() {
 }
 
 /**
- * @param {number} columnIdx
- * @param {number} rowIdx
  * @returns {HTMLSpanElement}
  */
-function makeCell(columnIdx, rowIdx) {
+function makeCell() {
   const cell = document.createElement('span');
   cell.classList.add('cell');
   cell.textContent = getRandomChar();
@@ -90,10 +88,9 @@ function makeCell(columnIdx, rowIdx) {
 }
 
 /**
- * @param {number} colIdx 
  * @returns {HTMLDivElement}
  */
-function makeColumn(colIdx) {
+function makeColumn() {
 const column = document.createElement('div');
   column.classList.add('column');
   return column;
@@ -101,17 +98,17 @@ const column = document.createElement('div');
 
 /**
  * Creates the grid by generating columns and cells.
- * Each column is a div element containing multiple span elements (cells).
- * The number of columns is defined by NUM_COLS, and each column contains
- * NUM_ROWS cells.
+ * - Each column is a div element containing multiple span elements (cells).
+ * - The number of columns is defined by NUM_COLS, and each column contains
+ *   NUM_ROWS cells.
  */
 function makeGrid() {
   for (let ci = 0; ci < NUM_COLS; ci++) {
-    const col = makeColumn(ci);
+    const col = makeColumn();
     columns.push(col);
     matrix.append(col);
     for (let ri = 0; ri < NUM_ROWS; ri++) {
-      col.append(makeCell(ci, ri));
+      col.append(makeCell());
     }
   }
 }
