@@ -1,0 +1,23 @@
+{
+  "name": "matrix-generator",
+  "version": "2.0.0",
+  "description": "Matrix Generator is a simple web application that recreates the iconic \"digital rain\" effect from the film *The Matrix*. The project is built using JavaScript, HTML, and CSS.",
+  "main": "matrix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "npx serverino --port 8888 "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cstringer/matrix-generator.git"
+  },
+  "author": "Chris Stringer (cstringer42@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cstringer/matrix-generator/issues"
+  },
+  "homepage": "https://github.com/cstringer/matrix-generator#readme",
+  "devDependencies": {
+    "serverino": "^1.1.0"
+  }
+}
