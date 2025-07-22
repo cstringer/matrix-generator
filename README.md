@@ -7,7 +7,7 @@ Matrix Generator is a simple web application that recreates the iconic "digital 
 - Animated digital rain effect
 - Responsive design for modern browsers
 
-## Requirements
+## Getting Started
 
 - [Node.js](https://nodejs.org/)
 - [`serverino`](https://www.npmjs.com/package/serverino) npm package
@@ -25,9 +25,22 @@ Matrix Generator is a simple web application that recreates the iconic "digital 
   ```
 3. Start the server:
   ```bash
-  npx serverino
+  npx serverino --port 8888
   ```
-4. Open your browser and navigate to `http://localhost:8080`
+4. Open your browser and navigate to `http://localhost:8888`
+
+Alternatively, you can install and run Matrix Generator using npm:
+
+1. Install the project dependencies:
+  ```bash
+  npm install
+  ```
+2. Start the development server using the script in `package.json`:
+  ```bash
+  npm run dev
+  ```
+3. Open your browser and navigate to `http://localhost:8888` to view the app.
+
 
 ## Usage
 
