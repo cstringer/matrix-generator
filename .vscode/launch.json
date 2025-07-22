@@ -5,11 +5,25 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "chrome",
+      "name": "Run and Debug",
+      "type": "node",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "url": "http://localhost:8888",
-      "webRoot": "${workspaceFolder}"
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serverino",
+        "-v",
+        "-p",
+        "8888"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "internalConsoleOptions": "neverOpen",
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "pattern": "Serving the current directory on http://localhost:(\\d+)",
+        "uriFormat": "http://localhost:%s",
+        "webRoot": "${workspaceFolder}"
+      }
     }
   ]
 }
