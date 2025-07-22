@@ -47,7 +47,6 @@ body.loaded {
   display: inline-block;
   height: 3.33vw;
   transition: all 500ms linear;
-  will-change: opacity;
 }
 .cell.hidden {
   visibility: hidden;
